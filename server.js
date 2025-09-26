@@ -22,7 +22,7 @@ const TOKEN_COOKIE = 'token';
 
 // === CORS：允许你的 GitHub Pages 访问（把下面用户名替换成你自己的）===
 const ALLOWED_ORIGINS = [
-  'https://YOUR_GH_USERNAME.github.io', // 不带仓库名
+  'https://sqgwang.github.io', // 不带仓库名
   // 如有自定义域名，在这里追加：'https://yourdomain.com'
 ];
 
@@ -206,3 +206,4 @@ app.delete('/api/results/:id', requireAuth, requireAdmin, async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening at http://localhost:${PORT}`);
 });
+
